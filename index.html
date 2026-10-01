@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Хобби — учебный магазин</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="top"><a class="brand" href="#">Хобби<span>товары для творчества</span></a><span class="demo">Учебный магазин</span></header>
+<main>
+<section class="intro"><p class="eyebrow">Для новых идей</p><h1>Начните с того,<br>что вам интересно</h1><p>Рисуйте, создавайте украшения и собирайте модели.</p></section>
+<div class="shop-layout"><section aria-labelledby="catalog-heading"><h2 id="catalog-heading">Каталог</h2>
+<div class="filters"><label>Поиск<input id="search" type="search" placeholder="Название товара"></label><label>Категория<select id="category"><option value="all">Все категории</option><option>Рисование</option><option>Рукоделие</option><option>Моделирование</option></select></label></div>
+<p id="count" class="muted" aria-live="polite"></p><div id="catalog" class="catalog"></div></section>
+<aside id="cart-panel" class="basket" aria-labelledby="cart-heading"><h2 id="cart-heading">Корзина</h2><p class="muted">Выберите товар в каталоге.</p></aside></div>
+<p id="status" class="status" role="status" aria-live="polite"></p>
+</main><footer>Хобби · Учебный проект по лабораторной работе 3</footer><script type="module" src="src/app.js"></script>
+</body></html>
