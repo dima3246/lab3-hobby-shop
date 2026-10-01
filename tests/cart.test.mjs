@@ -21,3 +21,5 @@ test('name and email must be valid', () => {
   assert.notEqual(validateCustomer(' ','student@example.com'), '');
   assert.notEqual(validateCustomer('Дмитрий','wrong-email'), '');
 });
+
+test('fractional quantities are rejected', () => assert.throws(() => setQuantity({}, products[0], 1.5), RangeError));

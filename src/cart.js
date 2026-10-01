@@ -1,5 +1,5 @@
 export function setQuantity(cart, product, quantity) {
-  if (!Number.isFinite(quantity) || quantity < 0 || quantity > product.stock) throw new RangeError('Недопустимое количество');
+  if (!Number.isInteger(quantity) || quantity < 0 || quantity > product.stock) throw new RangeError('Недопустимое количество');
   const next = {...cart};
   if (quantity === 0) delete next[product.id];
   else next[product.id] = quantity;
